@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cerifications</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="Achievements.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+
+    <body>
+        <h1>Roopesh Kanuri</h1>
+    <img class="Pass_photo" alt="Error Loading Image" src="5201411019.jpg">
+
+    <section class="sec4">
+        <nav>
+        <ul class="bar">
+          <li><a href="index.html">Education</a></li>              
+          <li><a href="Skills.html" >Skills</a></li>      
+          <li><a href="Internship.html">Internship</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Achievements.html" class = active>Certifications</a></li>
+          <li><a href="Contact_Me.html">Contact Me</a></li>
+        </ul>
+        </nav>
+    </section>
+
+    <main>
+        <img src="LinkedIn Learning Certificate-1.png" class="slide" alt="Error Loading Image">
+        <img src="LinkedIn Cloud Computing.jpeg" class="slide" alt="Error Loading Image">
+        <img src="Android app development-1.png" class="slide" alt="Error Loading Image">
+        <img src="Java Learning certificate-1.png" class="slide" alt="Error Loading Image">
+        <img src="Udemy Python-1.png" class="slide" alt="Error Loading Image">
+        
+    </main>
+
+    <div class="button">
+        <button class="Prev" onclick="goPrev()">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="Next" onclick="goNext()">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script>
+        const slides= document.querySelectorAll(".slide")
+        var counter = 0;
+
+        slides.forEach(
+            (slide, index) =>{
+                slide.style.left = `${index * 100}%`
+            }
+        )
+
+        const slideImage = () => {
+            slides.forEach(
+                (slide) => {
+                    slide.style.transform = `translateX(-${counter * 100}%)`
+                }
+            )
+        }
+
+        
+
+        const goNext = () => {
+            if (counter < slides.length - 1) {
+                counter++;
+                slideImage();
+            }
+        };
+
+        const goPrev = () => {
+            if (counter != 0) {
+                counter--;
+                slideImage();
+            }
+        };
+
+        
+    </script>
+
+    <footer>Portfolio Developed & Maintained by <b>&nbsp;Roopesh Kanuri</b></footer>
+
+    </body>
+
+</html>
+
