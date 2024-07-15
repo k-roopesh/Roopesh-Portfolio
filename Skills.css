@@ -1,0 +1,157 @@
+h1{
+    background-color: rgb(57, 51, 124);
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2%;
+    color: white;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    font-size: 100px;
+    margin: 0;
+    background: linear-gradient(180deg, rgb(57, 51, 124), white);
+    background-attachment: fixed;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+}
+
+body{
+    height: auto;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(216, 216, 216); /* Light grey background for remaining content */
+    overflow-x: auto; /* Prevent horizontal scroll */
+    perspective: 10px; /* Create 3D effect for parallax */
+    height: 110px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    scroll-behavior: smooth;
+    z-index: auto;
+    padding-bottom: 50px;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-content {
+    flex-grow: 1; /* Allow header content to take up available space */
+}
+
+.Pass_photo{
+    position: absolute;
+    top: 35px; /* Center image vertically in the header */
+    right: 50px; /* Half of the image outside the viewport */
+    height: 250px;
+    width: 200px;
+    border-radius: 50%; /* Circle the image */
+    border: 2px solid white; /* Optional: add a white border around the image */
+    
+}
+
+h2{
+    padding-left: 5px;
+}
+
+section.sec2{
+    width: 75%; 
+    height: 0;
+}
+
+section.sec2{
+    padding: 0px;
+    height: auto;
+}
+  
+.bar {
+    background-color: rgba(82, 21, 179, 0.7);
+    background: linear-gradient(180deg, rgba(136, 65, 249, 0.7), rgba(82, 21, 179, 0.7));
+    width: 100%;
+    height: 50px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+  
+.bar li {
+    height: 100%;
+    width: 110px;
+    border-right: 1px solid rgb(26, 55, 112);
+}
+  
+.bar li a {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+  
+.bar li a:hover {
+    background: none;
+    color: white
+}
+  
+.bar li a.active {
+    background: none;
+    color: white;
+}
+    
+.bar li a:hover {
+      background-color: rgb(70, 48, 126);
+}
+    
+.bar li a.active {
+      background-color: rgb(47, 42, 120);
+      color: white;
+}
+
+h3{
+    padding-left: 15px;
+    border: 2px solid;
+    width: 500px;
+    margin: 30px auto 60px;
+    height: 250px;
+    align-items: center;
+    line-height: 40px;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px grey;
+
+    .sch3{
+        margin-bottom: 100px;
+    }
+}
+
+h3:hover{
+    background: linear-gradient(180deg, rgb(76, 72, 123), rgb(97, 82, 255));
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extras{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    .extra1{
+        width: 150px;
+    }
+    .extra2{
+        width: 200px;
+    }
+    
+}
+
+
+
+
